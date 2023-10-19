@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .match {
+        margin: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+       input{
+        border-radius: 15px;
+    }
+    </style>
+</head>
+
+<body>
+     <div class="match">
+        <label for="match">Mot de passe </label>
+    <INPUT TYPE="text" size=20  id="pass" ><br>
+        <p id="Minuscule">Minuscule</p>
+        <p id="Majuscule">Majuscule</p>
+        <p id="chiffre">chiffre</p>
+        <p id="12 caratere">12 caratere</p>
+        <button onClick="validate()">valide</button>
+         <span id="msg"></span> 
+     </div>
+    <script src="test.js">
+    </script>
+</body>
+</html>

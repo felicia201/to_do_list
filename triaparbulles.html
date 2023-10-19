@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// var tableau = [];
+
+// for(var i = 0; i < 20; i++){
+//     var valeur = Math.floor(Math.random()* 101);
+//     tableau.push(valeur);
+// } 
+
+// console.log(tableau)
+
+var tab = [5,7,9,6,2,0];
+var tmp = tab[1];
+tab[1]=tab[0];
+tab[0]= tab[1];
+console.log(tab.length);
+let permutation;
+do{ 
+permutation = false;
+for(let i=0;i < tab.length;i++){
+    if(tab[i+1] < tab[i]) {
+        var tmp = tab[i];
+        tab[i]= tab[i+1];
+        tab[i+1] = tmp;
+        permutation =true;
+        console.log(tab);
+    }
+
+}
+} while(permutation);
+
+
+
+console.log(tab);
+
+
+
+
+
+</script>
+</html>
